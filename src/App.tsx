@@ -5,6 +5,10 @@ import AdminLayout from "./components/admin/layout/DefaultAdminLayout.layout";
 import MarketerLayout from "./components/marketer/layout/default_layout.component";
 import Influencerlayout from "./components/influencer/layout/Influrencer_layout.component";
 
+/**
+ * App
+ * @returns
+ */
 const App = () => {
   const loading = <div>Loading...</div>;
 

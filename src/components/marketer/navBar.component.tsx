@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+// NavigationMenus all nav bar routing array for marketer
 const NavigationMenus = [
   {
     id: 1,

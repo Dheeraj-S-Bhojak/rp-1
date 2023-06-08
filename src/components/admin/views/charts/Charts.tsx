@@ -10,6 +10,10 @@ import {
 } from "@coreui/react-chartjs";
 import DocsCallout from "../../DocsCallout";
 
+/**
+ * Charts
+ * @returns 
+ */
 const Charts: React.FC = () => {
   const random = (): number => Math.round(Math.random() * 100);
 

@@ -2,6 +2,11 @@ import React from "react";
 import heroImg from "../../assets/images/hero.png";
 import { Link } from "react-router-dom";
 
+/**
+ * Hero
+ * Marketer hero 
+ * @returns
+ */
 const Hero: React.FC = () => {
   return (
     <>

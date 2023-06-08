@@ -9,7 +9,7 @@ import Navbar from "../../marketer/navBar.component";
 
 import InfluencerAppRoutes from "../routes/influencer.route";
 
-const Influencerlayout = () => {
+const Influencerlayout: React.FC = () => {
   return (
     <>
       <CContainer fluid>

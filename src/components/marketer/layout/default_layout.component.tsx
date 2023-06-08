@@ -5,7 +5,11 @@ import { CContainer, CSpinner } from "@coreui/react";
 import Footer from "../footer.component";
 import AppRoutes from "../../../app.routes";
 import NavBar from "../navBar.component";
-const MarketerLayout = () => {
+/**
+ * MarketerLayout
+ * @returns
+ */
+const MarketerLayout: React.FC = () => {
   return (
     <>
       <CContainer fluid>

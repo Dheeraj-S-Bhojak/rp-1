@@ -1,4 +1,5 @@
 import React from "react";
+//state array have all stats data
 
 const stats: { id: number; name: string; value: string }[] = [
   { id: 1, name: "Influencers", value: "1 million +" },

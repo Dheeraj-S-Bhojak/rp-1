@@ -1,5 +1,6 @@
 import React from "react";
 
+// teamsArray 
 const teamsArray: {
   id: number;
   name: string;

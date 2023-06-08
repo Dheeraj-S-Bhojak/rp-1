@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+/**
+ * Footer
+ * @returns
+ */
 const Footer: React.FC = () => {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
   const legal = ["Terms", "Privacy", "Legal"];

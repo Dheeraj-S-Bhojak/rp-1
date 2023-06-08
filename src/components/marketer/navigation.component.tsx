@@ -1,3 +1,7 @@
+/**
+ * this is not working right now
+ */
+
 import React from "react";
 import { Link } from "react-router-dom";
 // import ProfilePic from "../../assets/images/profile-picture.png";

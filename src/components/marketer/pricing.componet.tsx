@@ -3,6 +3,7 @@ import { cilCheckAlt } from "@coreui/icons";
 import { Link } from "react-router-dom";
 
 const Pricing: React.FC = () => {
+  //all subscription plan list data array
   const SubscriptionList = [
     {
       id: 1,

@@ -5,6 +5,10 @@ import Features from "../../components/marketer/features.component";
 import FAQ from "../../components/marketer/FAQ_company.component";
 import Pricing from "../../components/marketer/pricing.componet";
 
+/**
+ * marketerHome
+ * @returns
+ */
 const MarketerHome: React.FC = () => {
   return (
     <>
