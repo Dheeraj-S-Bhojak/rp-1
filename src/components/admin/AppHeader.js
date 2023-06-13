@@ -5,20 +5,25 @@ import {
   CContainer,
   CHeader,
   CHeaderBrand,
-  CHeaderDivider,
   CHeaderNav,
   CHeaderToggler,
   CNavLink,
   CNavItem,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from "@coreui/icons";
+import { cilEnvelopeOpen, cilList, cilMenu } from "@coreui/icons";
+import _ from "lodash";
 
-import { AppBreadcrumb } from "./index";
 import { AppHeaderDropdown } from "./header/index.header";
 import { logo } from "../../assets/brand/logo";
 
 const AppHeader = () => {
+  const AdminNav = [
+    { id: 1, title: "dashboard", path: "#/admin/dashboard" },
+    { id: 2, title: "user", path: "#/admin/dashboard" },
+    { id: 3, title: "settings", path: "#/admin/dashboard" },
+    { id: 4, title: "notification", path: "#/admin/dashboard" },
+  ];
   const dispatch = useDispatch();
   const sidebarShow = useSelector((state) => state.sidebarShow);
 
@@ -34,34 +39,22 @@ const AppHeader = () => {
           <CIcon icon={logo} height={48} alt="Logo" />
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
-          <CNavItem>
-            <CNavLink to="/dashboard" component={NavLink}>
-              Dashboard
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">Notification</CNavLink>
-          </CNavItem>
+          {AdminNav.map((navOption) => (
+            <CNavItem key={navOption.id}>
+              <CNavLink to={navOption.path} component={NavLink}>
+                {_.startCase(navOption.title)}
+              </CNavLink>
+            </CNavItem>
+          ))}
         </CHeaderNav>
         <CHeaderNav>
           <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilBell} size="lg" />
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">
+            <CNavLink to="#">
               <CIcon icon={cilList} size="lg" />
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">
+            <CNavLink to="#">
               <CIcon icon={cilEnvelopeOpen} size="lg" />
             </CNavLink>
           </CNavItem>
@@ -69,10 +62,6 @@ const AppHeader = () => {
         <CHeaderNav className="ms-3">
           <AppHeaderDropdown />
         </CHeaderNav>
-      </CContainer>
-      <CHeaderDivider />
-      <CContainer fluid>
-        <AppBreadcrumb />
       </CContainer>
     </CHeader>
   );

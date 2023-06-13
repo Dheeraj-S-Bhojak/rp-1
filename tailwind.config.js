@@ -6,6 +6,9 @@ module.exports = {
       fontSize: {
         "8p": "14px",
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

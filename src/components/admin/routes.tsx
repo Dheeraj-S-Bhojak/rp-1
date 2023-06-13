@@ -1,4 +1,4 @@
-import React, { ReactComponentElement, lazy, LazyExoticComponent } from "react";
+import React, { LazyExoticComponent } from "react";
 
 const Page404: LazyExoticComponent<any> = React.lazy(
   () => import("./views/pages/page404/Page404")
@@ -17,12 +17,8 @@ const Widgets: LazyExoticComponent<any> = React.lazy(
 );
 
 // define Admin Routes as array
-const routes: {
-  path: string;
-  name: string;
-  element: LazyExoticComponent<any>;
-}[] = [
-  // { path: "/", name: "Home" },
+const routes = [
+  { path: "/", name: "Home" },
   { path: "/dashboard", name: "Dashboard", element: Dashboard },
   { path: "/charts", name: "Charts", element: Charts },
   { path: "/widgets", name: "Widgets", element: Widgets },

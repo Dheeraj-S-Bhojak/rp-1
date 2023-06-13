@@ -86,7 +86,7 @@ const LoginForm: React.FC = () => {
               </div>
               <div>
                 <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-5">
+                  <div className="w-full px-3 mb-2">
                     <label className="text-xs font-semibold px-1">Email</label>
                     <div className="flex">
                       <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
@@ -113,7 +113,7 @@ const LoginForm: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-12">
+                  <div className="w-full px-3 mb-2">
                     <label className="text-xs font-semibold px-1">
                       Password
                     </label>

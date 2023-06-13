@@ -99,7 +99,7 @@ const RegistrationForm: React.FC = () => {
               </div>
               <div>
                 <div className="flex -mx-3">
-                  <div className="w-1/2 px-3 mb-5">
+                  <div className="w-1/2 px-3 mb-1">
                     <label className="text-xs font-semibold px-1">
                       First name
                     </label>
@@ -123,7 +123,7 @@ const RegistrationForm: React.FC = () => {
                       </span>
                     )}
                   </div>
-                  <div className="w-1/2 px-3 mb-5">
+                  <div className="w-1/2 px-3 mb-1">
                     <label className="text-xs font-semibold px-1">
                       Last name
                     </label>
@@ -143,7 +143,7 @@ const RegistrationForm: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-5">
+                  <div className="w-full px-3 mb-1">
                     <label className="text-xs font-semibold px-1">Email</label>
                     <div className="flex">
                       <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
@@ -170,14 +170,14 @@ const RegistrationForm: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-12">
+                  <div className="w-full px-3 mb-2">
                     <label className="text-xs font-semibold px-1">
                       Password
                     </label>
                     <div className="flex">
                       <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                         <CIcon icon={cilLockLocked} className="text-black" />
-                      </div> 
+                      </div>
                       <input
                         required
                         name="password"
@@ -228,7 +228,7 @@ const RegistrationForm: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-12">
+                  <div className="w-full px-3 mb-2">
                     <label className="text-xs font-semibold px-1">
                       Confirm Password
                     </label>
@@ -295,7 +295,7 @@ const RegistrationForm: React.FC = () => {
                     </Link>
                   </p>
                 </div>
-                <div className=" rounded-t-lg p-8">
+                <div className=" rounded-t-lg p-4">
                   <p className="text-center text-sm font-semibold text-gray-700 ">
                     Sign up with
                   </p>
@@ -335,7 +335,7 @@ const RegistrationForm: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex -mx-3">
-                  <div className="w-full px-3 mb-5">
+                  <div className="w-full px-3 mb-1">
                     <button
                       type="submit"
                       onClick={handleSubmitRegister}

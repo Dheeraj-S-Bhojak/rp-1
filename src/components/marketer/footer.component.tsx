@@ -5,7 +5,14 @@ import { Link } from "react-router-dom";
  * @returns
  */
 const Footer: React.FC = () => {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = [
+    "Product",
+    "Features",
+    "Pricing",
+    "Company",
+    "Blog",
+    "Image by Freepik",
+  ];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">

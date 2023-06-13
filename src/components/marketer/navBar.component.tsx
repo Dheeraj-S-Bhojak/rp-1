@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import BannerOffer from "../influencer/banner/banner.component";
 // NavigationMenus all nav bar routing array for marketer
 const NavigationMenus = [
   {
@@ -35,12 +36,21 @@ const NavigationMenus = [
 ];
 
 const Navbar: React.FC = () => {
+  // const [showBanner, setShowBanner] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // for hemburger open or close
 
   //toggle open the hemburger
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setShowBanner(true);
+  //   }, 5000); // Call the new component after 5 seconds
+
+  //   // Clean up the timeout when the component is unmounted or the dependency changes
+  //   return () => clearTimeout(timeout);
+  // }, []); // Empty dependency array to run the effect only once
 
   return (
     <>
@@ -146,6 +156,8 @@ const Navbar: React.FC = () => {
         )}
       </nav>
       <hr className="border-t border-gray-700" />
+      {/* {showBanner && <BannerOffer />}  // show banner after 10 sec
+       */}
     </>
   );
 };
