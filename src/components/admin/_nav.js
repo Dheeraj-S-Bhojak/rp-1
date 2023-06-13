@@ -35,7 +35,7 @@ const _nav = [
     items: [
       {
         component: CNavItem,
-        name: "Influencers",
+        name: "Influencer",
         to: "/admin/",
       },
       {
@@ -83,12 +83,12 @@ const _nav = [
       {
         component: CNavItem,
         name: "Error 404",
-        to: "/admin/404",
+        to: "/admin/not-found",
       },
       {
         component: CNavItem,
         name: "Error 500",
-        to: "/admin/500",
+        to: "/admin/server-error",
       },
     ],
   },

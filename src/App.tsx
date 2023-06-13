@@ -3,7 +3,7 @@ import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 
 import AdminLayout from "./components/admin/layout/DefaultAdminLayout.layout";
 import MarketerLayout from "./components/marketer/layout/default_layout.component";
-import Influencerlayout from "./components/influencer/layout/Influrencer_layout.component";
+import Influencerlayout from "./components/influencer/layout/Influencer_layout.component";
 
 /**
  * App

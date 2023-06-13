@@ -15,7 +15,12 @@ const Charts: LazyExoticComponent<any> = React.lazy(
 const Widgets: LazyExoticComponent<any> = React.lazy(
   () => import("./views/widgets/Widgets")
 );
-
+const Login: LazyExoticComponent<any> = React.lazy(
+  () => import("./views/pages/login/Login")
+);
+const Register: LazyExoticComponent<any> = React.lazy(
+  () => import("./views/pages/register/Register")
+);
 // define Admin Routes as array
 const routes = [
   { path: "/", name: "Home" },
@@ -24,6 +29,8 @@ const routes = [
   { path: "/widgets", name: "Widgets", element: Widgets },
   { path: "/not-found", name: "error404", element: Page404 },
   { path: "/server-error", name: "error500", element: Page500 },
+  { path: "/login", name: "login", element: Login },
+  { path: "/register", name: "register", element: Register },
 ];
 
 export default routes;

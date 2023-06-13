@@ -19,10 +19,10 @@ import { logo } from "../../assets/brand/logo";
 
 const AppHeader = () => {
   const AdminNav = [
-    { id: 1, title: "dashboard", path: "#/admin/dashboard" },
-    { id: 2, title: "user", path: "#/admin/dashboard" },
-    { id: 3, title: "settings", path: "#/admin/dashboard" },
-    { id: 4, title: "notification", path: "#/admin/dashboard" },
+    { id: 1, title: "dashboard", path: "/admin/dashboard" },
+    { id: 2, title: "user", path: "/admin/dashboard" },
+    { id: 3, title: "settings", path: "/admin/dashboard" },
+    { id: 4, title: "notification", path: "/admin/dashboard" },
   ];
   const dispatch = useDispatch();
   const sidebarShow = useSelector((state) => state.sidebarShow);

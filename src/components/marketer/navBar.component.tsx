@@ -12,7 +12,7 @@ const NavigationMenus = [
   {
     id: 2,
     title: "About",
-    to: "/home/about",
+    to: "about",
     active: false,
   },
   {
@@ -24,7 +24,7 @@ const NavigationMenus = [
   {
     id: 4,
     title: "Pricing",
-    to: "/home/pricing",
+    to: "pricing",
     active: false,
   },
   {
@@ -32,6 +32,11 @@ const NavigationMenus = [
     title: "Contact",
     to: "/home/contact",
     active: false,
+  },
+  {
+    id: 6,
+    title: "Influencer",
+    to: "/#/influencer",
   },
 ];
 

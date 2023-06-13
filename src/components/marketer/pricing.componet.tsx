@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
 
   return (
     <>
-      <div className="pricing w-full mx-auto bg-white px-5 py-10 text-gray-600 mb-10">
+      <div className="pricing w-full mx-auto bg-gray-200 px-5 py-10 text-gray-600">
         <div className="text-center max-w-xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold mb-5 text-indigo-600">
             Pricing
@@ -56,7 +56,7 @@ const Pricing: React.FC = () => {
           {SubscriptionList.map((items) => (
             <div
               key={items.id}
-              className={`w-full md:w-1/3 md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col ${items.styles}`}>
+              className={`w-full md:w-1/3 md:max-w-none bg-gray-100 px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col ${items.styles}`}>
               <div className="w-full flex-grow">
                 <h2 className="text-center font-bold uppercase mb-4">
                   {items.title}
