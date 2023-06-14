@@ -1,4 +1,17 @@
 import React, { Fragment } from "react";
+import {
+  CRow,
+  CCol,
+  CDropdown,
+  CDropdownMenu,
+  CDropdownItem,
+  CDropdownToggle,
+  CWidgetStatsA,
+} from "@coreui/react";
+import { cilOptions } from "@coreui/icons";
+
+import CIcon from "@coreui/icons-react";
+
 import userAvetar from "../../../assets/images/avatars/2.jpg";
 const InfluencerCard: React.FC = () => {
   const niches = ["Music", "Beauty", "Family", "gaming"];
@@ -11,6 +24,7 @@ const InfluencerCard: React.FC = () => {
             src={userAvetar}
             alt="product designer"
           />
+
           <div className="inline-flex z-50 ">
             <img
               src="https://assets-global.website-files.com/6096c30cbe3be47082faee28/62f92c6b0825c8c05b256c32_a-social_in.png"

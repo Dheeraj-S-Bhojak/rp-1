@@ -44,13 +44,13 @@ const FAQ: React.FC = () => {
             </p>
           </div>
           {FAQ_Data.map((item) => (
-            <div className="grid divide-y divide-neutral-200 mx-auto mt-8 ">
+            <div
+              key={item.id}
+              className="grid divide-y divide-neutral-200 mx-auto mt-8 ">
               <div className="border-b ">
                 <details className="group">
                   <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                    <span className="text-gray-950">
-                      Lorem ipsum dolor sit amet.
-                    </span>
+                    <span className="text-gray-950">{item.question}</span>
                     <span className="transition group-open:rotate-180">
                       <svg
                         fill="none"
@@ -67,10 +67,7 @@ const FAQ: React.FC = () => {
                     </span>
                   </summary>
                   <p className="text-gray-800 mt-3 group-open:animate-fadeIn">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Earum alias molestiae sunt consequatur deleniti officiis
-                    magni, sequi adipisci excepturi unde, ipsum, consequuntur
-                    eos nobis maiores?
+                    {item.answer}
                   </p>
                 </details>
               </div>

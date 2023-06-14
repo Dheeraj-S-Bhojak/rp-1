@@ -1,3 +1,4 @@
+import Marquee from "../../components/influencer/brandLoop/socialMarquee";
 import FeaturesInfluencer from "../../components/influencer/features/features.component";
 import HeroInfluencer from "../../components/influencer/hero._influencer.componet";
 import InfluencerStatic from "../../components/influencer/influencer_stats.component";
@@ -11,6 +12,7 @@ const HomeInfluencer = () => {
       <InfluencerStatic />
       <FeaturesInfluencer />
       <Newsletter />
+      <Marquee />
     </>
   );
 };
