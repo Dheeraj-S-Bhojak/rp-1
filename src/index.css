@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.instagram-border {
+  background: linear-gradient(#ccc 0 0) padding-box,
+    linear-gradient(to right, #9c20aa, #fb3570) border-box;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  display: inline-block;
+}

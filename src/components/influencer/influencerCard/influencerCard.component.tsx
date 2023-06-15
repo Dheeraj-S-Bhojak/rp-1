@@ -1,18 +1,6 @@
 import React, { Fragment } from "react";
-import {
-  CRow,
-  CCol,
-  CDropdown,
-  CDropdownMenu,
-  CDropdownItem,
-  CDropdownToggle,
-  CWidgetStatsA,
-} from "@coreui/react";
-import { cilOptions } from "@coreui/icons";
 
-import CIcon from "@coreui/icons-react";
-
-import userAvetar from "../../../assets/images/avatars/2.jpg";
+import userAvatar from "../../../assets/images/avatars/2.jpg";
 const InfluencerCard: React.FC = () => {
   const niches = ["Music", "Beauty", "Family", "gaming"];
   return (
@@ -21,7 +9,7 @@ const InfluencerCard: React.FC = () => {
         <div className="bg-indigo-500 -mx-10 -m-2 p-2 mb-2 rounded-bottom rounded-3xl">
           <img
             className="-mb-2 w-28 h-[116px] rounded-full shadow-lg mx-auto border-1 border-gray-600"
-            src={userAvetar}
+            src={userAvatar}
             alt="product designer"
           />
 
@@ -32,7 +20,7 @@ const InfluencerCard: React.FC = () => {
               width="20"
               height="20"
               alt="Instagram"
-              className="border-1 border-gray-600 rounded-full"
+              className="border-1 instagram-border rounded-full -ml-1"
             />
             <img
               src="https://assets-global.website-files.com/6096c30cbe3be47082faee28/62f92c6b0825c8004f256c34_a-social_y.png"
@@ -40,7 +28,7 @@ const InfluencerCard: React.FC = () => {
               width="20"
               height="20"
               alt="Youtube"
-              className="border-1 border-gray-600 rounded-full -ml-1"
+              className=" rounded-full -ml-1"
             />
             <img
               src="https://assets-global.website-files.com/6096c30cbe3be47082faee28/62f92c6b0825c83ef4256c2e_a-social_fb.png"
@@ -48,7 +36,7 @@ const InfluencerCard: React.FC = () => {
               width="20"
               height="20"
               alt="Facebook"
-              className="border-1 border-gray-600 rounded-full -ml-1"
+              className="rounded-full -ml-1"
             />
             <img
               src="https://assets-global.website-files.com/6096c30cbe3be47082faee28/62f92c6b0825c8596c256c2c_a-social_tw.png"
@@ -56,7 +44,7 @@ const InfluencerCard: React.FC = () => {
               width="20"
               height="20"
               alt="Twitter"
-              className="border-1 border-gray-600 rounded-full -ml-1"
+              className="rounded-full -ml-1"
             />
           </div>
           <h1
