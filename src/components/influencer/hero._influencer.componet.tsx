@@ -37,12 +37,12 @@ const HeroInfluencer: React.FC = () => {
           </p>
           <div className="flex items-center">
             <Link
-              to="/"
+              to=""
               className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
               Get started
             </Link>
             <Link
-              to="/"
+              to=""
               aria-label=""
               className="inline-flex items-center font-semibold underline text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700">
               Learn more

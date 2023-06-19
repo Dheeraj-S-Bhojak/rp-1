@@ -4,6 +4,7 @@
   width: 100%;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 .slider::before,
 .slider::after {

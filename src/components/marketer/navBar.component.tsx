@@ -1,46 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import BannerOffer from "../influencer/banner/banner.component";
-// NavigationMenus all nav bar routing array for marketer
-const NavigationMenus = [
-  {
-    id: 1,
-    title: "Home",
-    to: "/",
-    active: true,
-  },
-  {
-    id: 2,
-    title: "About",
-    to: "about",
-    active: false,
-  },
-  {
-    id: 3,
-    title: "Services",
-    to: "services",
-    active: false,
-  },
-  {
-    id: 4,
-    title: "Pricing",
-    to: "pricing",
-    active: false,
-  },
-  {
-    id: 5,
-    title: "Contact",
-    to: "/home/contact",
-    active: false,
-  },
-  {
-    id: 6,
-    title: "Influencer",
-    to: "/#/influencer",
-  },
-];
+import PropTypes from "prop-types";
 
-const Navbar: React.FC = () => {
+// import BannerOffer from "../influencer/banner/banner.component";
+// navigationMenus all nav bar routing array for marketer
+interface MenuItem {
+  id: number;
+  title: string;
+  to: string;
+  active: boolean;
+}
+interface MarketerLayoutProps {
+  navigationMenus: MenuItem[];
+}
+
+const Navbar: React.FC<MarketerLayoutProps> = ({ navigationMenus }) => {
+  console.log(navigationMenus);
   // const [showBanner, setShowBanner] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // for hemburger open or close
 
@@ -60,7 +35,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav className="relative px-4 py-4 flex justify-between items-center bg-white lg:items-center">
-        <Link to="/" className="flex items-center lg:mx-0 sm:mx-auto">
+        <Link to="" className="flex items-center lg:mx-0 sm:mx-auto">
           {/* {logo} */}
           <h1 className="logo self-center font-extrabold	text-2xl whitespace-nowrap text-indigo-600 dark:text-white  hover:text-amber-300 md:mx-auto ">
             Rock Influencer
@@ -83,7 +58,7 @@ const Navbar: React.FC = () => {
           className={`hidden font-medium absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6 ${
             isOpen ? "flex" : ""
           }`}>
-          {NavigationMenus.map((menuItem) => (
+          {navigationMenus.map((menuItem) => (
             <li key={menuItem.id}>
               <Link
                 to={menuItem.to}
@@ -133,7 +108,7 @@ const Navbar: React.FC = () => {
               </div>
               <div id="mobile-menu-2">
                 <ul>
-                  {NavigationMenus.map((MenuItem) => (
+                  {navigationMenus.map((MenuItem) => (
                     <li key={MenuItem.id} className="mb-1">
                       <Link
                         className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
